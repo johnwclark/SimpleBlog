@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/about', 'PagesController@getAbout' );
+Route::get('/contact', 'PagesController@getContact' );
+Route::get('/', 'PagesController@getIndex' );
+
+// this is the laravel way to connect all the routes for a controller
+Route::resource('posts', 'PostController');
+
+
+/* to set the full list of application routes
+ * php artisan route:list
+ */
