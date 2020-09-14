@@ -2,8 +2,12 @@
 a simple php and laravel based blog
 
 -----
-I have done this on a WSL running Ubuntu
-----------packages needed to setup-------
+I have done this on a WSL running Ubuntu. 
+This project gets constants security warnings, and there are always unresolved potential problems. 
+I have to assume the seucirty problems are typical for laravel.
+
+---------- WSL Ubuntu packages -------
+# install required packages 
 sudo apt install apache2
 sudo apt install mysql-client-core-5.7
 sudo apt install mysql-server
